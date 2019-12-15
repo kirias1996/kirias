@@ -1,0 +1,84 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* ここからCSSを記述してください */
+.header{
+  background-color:#26d0c9;
+  color:#fff;
+  height:90px;
+}
+/* floatを使って文字や画像を横並びにしていく
+  paddingで余白の調整を行っていく
+*/
+.header h1{
+  float:left;
+  padding:20px 40px;
+  font-size:36px;
+}
+.header li{
+  float:left;
+  padding:20px 33px;
+}
+.main{
+  padding-top:100px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.copy-container h1  {
+  font-size: 140px;
+}
+.copy-container h2{
+ font-size:60px;
+}
+.copy-container span{
+  color:#ff4a4a;
+}
+/* border サイズ　種類　色を指定する */
+.contents {
+  margin-top:100px;
+  height:500px;
+}
+.section-style{
+  font-size:28px;
+  border-bottom:2px solid #dee7ec;
+  padding-bottom: 15px;
+  margin-bottom:50px;
+}
+.contents-item li{
+  float:left;
+  margin-right:40px;
+}
+.contents-item p{
+  margin-top:30px;
+  font-size:24px;
+}
+.contents-form{
+  padding-top:100px;
+}
+input,textarea{
+  width:400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
+.contact-submit {
+  background-color: #dee7ec;
+  color: #889eab;
+}
