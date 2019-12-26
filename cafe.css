@@ -1,0 +1,123 @@
+/* 古いブラウザでもレイアウトが崩れないように対応させる宣言 */
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {
+display: block;
+}
+
+
+h1{
+    font-size: 0.9em;
+    margin: 0px;
+}
+/* id命で指定する場合は#を用いて記述する */
+#wrap {
+  /* コンテンツを画面中央に自動調整するため */
+  margin : 0 auto;
+  width : 960px;
+}
+/* メニューリスト設定 */
+#menu{
+  margin:0px;
+  padding:0px;
+}
+#menu li{
+  /* リストが横並びになるように設定 */
+  float:left;
+  /* リスト内の・を非表示 */
+  list-style-type: none;
+}
+
+
+#mainimg {
+  width : 960px;
+  height : 350px;
+  /* 左に回り込み処理させるための設定 */
+  float : left;
+  /* ほかのコンテンツとの余白を設定 */
+  margin : 10px 0px 15px 0px;
+}
+
+#newsbox{
+  width : 593px;
+  height: auto;
+  border:solid 1px #CCC;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #FFF;
+}
+
+#newsbox p{
+  /* 破線の表示 */
+  border-bottom: dashed 1px #CCC;
+}
+.midashi{
+  border-bottom: dashed 2px #C30;
+  font-weight: bold;
+  color:#C30;
+  font-size: 1.2em;
+}
+
+#contents{
+  width  : 615px;
+  float : left;
+}
+
+.contentsbox{
+  width: 593px;
+  height: auto;
+  border: solid 1px #CCC;
+  padding :10px;
+  margin-bottom :15px;
+  background-color: #FFF;
+}
+
+.imgbox{
+  width: 230px;
+  height: 167px;
+  float: right;
+  margin:10px 0px 10px 25px;
+}
+
+.clear{
+  clear:both;
+}
+
+h2 {
+  font-size: 0.9em;
+  margin:0px 0px 20px 0px;
+}
+#sidenavi{
+  /* 横幅とマージンの合計がsidenaviのサイズとなる */
+  width : 330px;
+  margin-left: 15px;
+  float:left;
+}
+
+#goannai{
+  font-size: 1.2rem;
+  border-bottom: solid 2px #C30;
+  margin:0px 0px 15px 0px;
+  color:#C30;
+}
+.sidebox{
+  width:330px;
+  height:130px;
+  margin-bottom:15px;
+}
+/* contentsとsidenaviで設定したfloatを解除する */
+/* タグに直接記載するときはなにもつけなくていい */
+footer{
+  /* floatの解除 */
+  clear: both;
+  height: 50px;
+  /* テキストの中央寄せの設定 */
+  text-align: center;
+  font-size: 0.85em;
+  /* 背景画像の表示・設定 */
+  background-image: url(img/footer.gif);
+  /* 背景が繰り返し表示されないように設定する */
+  background-repeat: no-repeat;
+  /* paddingは領域内の余白設定 */
+  padding-top: 30px;
+  /* 未対応ブラウザにも認識してもらうための設定 */
+  display:block;
+}
