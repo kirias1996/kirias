@@ -2,6 +2,42 @@
 article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {
 display: block;
 }
+body{
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color:#630;
+  line-height:25px;
+  font-size:0.95em;
+}
+/* 画像に枠線を表示させない どのパソコンでも同じように表示されるようにするための設定*/
+img{
+  border:0px;
+}
+
+/*飾りつけなしに設定する  */
+a{
+  text-decoration: none;
+}
+
+/* アクセスしたことのないリンクの設定 */
+a:link{
+  color:#630;
+}
+
+/* アクセスしたことのあるリンクの設定 */
+a:visited{
+  color:#630;
+}
+
+/*  マウスが上に載っている状態のリンクm*/
+a:hover{
+  color:#630;
+  text-decoration: underline;
+}
+
+/* クリック中のリンク */
+a:active{
+  color:#630;
+}
 
 
 h1{
@@ -120,4 +156,11 @@ footer{
   padding-top: 30px;
   /* 未対応ブラウザにも認識してもらうための設定 */
   display:block;
+}
+/* メニューボックスのスタイル作成 */
+.minibox{
+  width:135px;
+  height: 135px;
+  margin: 0px 10px 10px 0px;
+  float :left;
 }
